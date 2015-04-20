@@ -27,6 +27,7 @@
 #ifndef ARM_H
 #define ARM_H
 
+#include <target/armv7a_trace.h>
 #include <helper/command.h>
 #include "target.h"
 
@@ -144,6 +145,9 @@ struct arm {
 
 	/** Handle for the Embedded Trace Module, if one is present. */
 	struct etm_context *etm;
+
+	/** Handle for the Program Trace Macrocell, if one is present. */
+	struct ptm_context *ptm;
 
 	/* FIXME all these methods should take "struct arm *" not target */
 

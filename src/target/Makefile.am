@@ -82,6 +82,7 @@ ARMV7_SRC = \
 	armv7m_trace.c \
 	cortex_m.c \
 	armv7a.c \
+	armv7a_trace.c \
 	cortex_a.c
 
 ARM_DEBUG_SRC = \

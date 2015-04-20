@@ -49,6 +49,7 @@
 #include "config.h"
 #endif
 
+#include <target/armv7a_trace.h>
 #include "breakpoints.h"
 #include "cortex_a.h"
 #include "register.h"
@@ -3237,6 +3238,9 @@ static const struct command_registration cortex_a_command_handlers[] = {
 	},
 	{
 		.chain = armv7a_command_handlers,
+	},
+	{
+		.chain = armv7a_trace_command_handlers,
 	},
 	{
 		.name = "cortex_a",
